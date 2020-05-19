@@ -13,11 +13,9 @@ output = [object methodWithOutput];
 [NSString stringWithFormat:[prefs format]];
 ```
 
-## 2. []
+## 2. id
 
 자동 형변환
-
-## 3. id
 
 void pointer
 
@@ -25,7 +23,7 @@ void pointer
 id myObject = [NSString string];
 ```
 
-## 4. : 
+## 3. : 
 
 [] 인자값
 
@@ -33,17 +31,17 @@ id myObject = [NSString string];
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
 ```
 
-## 5. .
+## 4. .
 
 ```objective-c
 photo.caption = @"Hello World";
 ```
 
-## 6. @
+## 5. @
 
 Type hint -> Variables
 
 
-## 7.+,-
+## 6.+,-
 
 \+ : Class Method, - : Instance Method
