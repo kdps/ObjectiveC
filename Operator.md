@@ -1,4 +1,4 @@
-# 1. []
+## 1. []
 
 Call method
 
@@ -10,25 +10,25 @@ output = [object methodWithOutput];
 [NSString stringWithFormat:[prefs format]];
 
 
-2. 자동 형변환
+## 2. 자동 형변환
 
 id myObject = [NSString string];
 
 
-3. : 
+## 3. : 
 
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
 
 
-5. .
+## 5. .
 
 photo.caption = @"오늘은좋은날!!";
 
-6. @
+## 6. @
 
 Type hint -> Variables
 
 
-7.+,-
+## 7.+,-
 
 + : Class Method, - : Instance Method
