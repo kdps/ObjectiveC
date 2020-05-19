@@ -2,13 +2,16 @@
 
 메소드 호출
 
+```objective-c
+a.method(); => [a method];
+
 [object method];
 [object methodWithInput:input];
 
 output = [object methodWithOutput];
 
 [NSString stringWithFormat:[prefs format]];
-
+```
 
 ## 2. []
 
