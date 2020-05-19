@@ -1,6 +1,6 @@
 ## 1. []
 
-Call method
+메소드 호출
 
 [object method];
 [object methodWithInput:input];
@@ -10,12 +10,18 @@ output = [object methodWithOutput];
 [NSString stringWithFormat:[prefs format]];
 
 
-## 2. 자동 형변환
+## 2. []
+
+자동 형변환
+
+## 3. id
 
 id myObject = [NSString string];
 
 
-## 3. : 
+## 4. : 
+
+[] 변수
 
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
 
