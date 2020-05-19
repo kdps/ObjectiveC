@@ -2,9 +2,9 @@
 
 메소드 호출
 
-```objective-c
 a.method(); => [a method];
 
+```objective-c
 [object method];
 [object methodWithInput:input];
 
@@ -21,19 +21,23 @@ output = [object methodWithOutput];
 
 void pointer
 
+```objective-c
 id myObject = [NSString string];
-
+```
 
 ## 4. : 
 
 [] 변수
 
+```objective-c
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
-
+```
 
 ## 5. .
 
-photo.caption = @"오늘은좋은날!!";
+```objective-c
+photo.caption = @"Hello World";
+```
 
 ## 6. @
 
