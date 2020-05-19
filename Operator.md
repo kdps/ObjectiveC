@@ -16,6 +16,8 @@ output = [object methodWithOutput];
 
 ## 3. id
 
+void pointer
+
 id myObject = [NSString string];
 
 
