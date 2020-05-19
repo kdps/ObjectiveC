@@ -1,6 +1,7 @@
 ## 1. Get selfs
 
 ```objective-c
+// Static
 + (NSArray *)validSuits {
     return @[@"♠︎", @"♣︎", @"♥︎", @"♦︎"];
 }
