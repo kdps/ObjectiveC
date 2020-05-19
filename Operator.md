@@ -2,7 +2,9 @@
 
 메소드 호출
 
-a.method(); => [a method];
+a->method(); => [a method];
+
+obj->method(argument); -> [obj method:argument];
 
 ```objective-c
 [object method];
