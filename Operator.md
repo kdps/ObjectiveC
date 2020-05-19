@@ -31,4 +31,4 @@ Type hint -> Variables
 
 ## 7.+,-
 
-+ : Class Method, - : Instance Method
+\+ : Class Method, - : Instance Method
