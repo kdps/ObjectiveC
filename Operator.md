@@ -27,7 +27,7 @@ id myObject = [NSString string];
 
 ## 4. : 
 
-[] 변수
+[] 인자값
 
 ```objective-c
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
