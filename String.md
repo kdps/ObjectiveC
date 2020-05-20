@@ -1,18 +1,18 @@
 ## 1. String Format
 
-`String`
-
 ```objective-c
 NSString * format = [NSString stringWithFormat:@"%@s World", @"Hello"];
 ```
 
-`Integer`
+`String`
 
 ```objective-c
 int k = 0x8f << 2;
 id format = [NSString stringWithFormat:@"%d", k];
 NSLog (fm);
 ```
+
+`Integer`
 
 ## 2. Equality
 
