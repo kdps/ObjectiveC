@@ -24,3 +24,9 @@ UIAlertAction* defaultAction2 = [UIAlertAction actionWithTitle:@"NO" style:UIAle
 ```objective-c
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 ```
+
+## 3. Open browser
+
+```objective-c
+[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.stackoverflow.com"]];
+```
