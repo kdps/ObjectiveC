@@ -94,3 +94,9 @@ UILabel *label = [[UILabel alloc] init];
 label.highlighted = YES;
 label.highlightedTextColor = [UIColor redColor];
 ```
+
+## 8. Line break
+
+```objective-c
+[label setLineBreakMode:NSLineBreakByTruncatingTail];
+```
