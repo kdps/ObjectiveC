@@ -1,6 +1,6 @@
 ## 1. []
 
-메소드 호출
+Call method
 
 a->method(); => [a method];
 
@@ -17,7 +17,7 @@ output = [object methodWithOutput];
 
 ## 2. id
 
-자동 형변환
+Promotion
 
 void pointer
 
@@ -27,7 +27,7 @@ id myObject = [NSString string];
 
 ## 3. : 
 
-[] 인자값
+[] Arguments
 
 ```objective-c
 [myData writeToFile:@"/tmp/log.txt" atomically:NO];
