@@ -82,5 +82,7 @@ label.font = [label.font fontWithSize:15];
 ```
 
 ```objective-c
+NSString * stringVar = @"basic String var";
+
 [label setText: stringVar];
 ```
