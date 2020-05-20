@@ -48,3 +48,5 @@ void (^test)(void) = ^(void) {
 
 test();
 ```
+
+`block can't to modify outer variables data`
