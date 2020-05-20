@@ -24,3 +24,10 @@ date = [calendar dateByAddingComponents:comps
 
 NSLog(@"Before 90days : %@", date);
 ```
+
+## 2. Get current date
+
+```objective-c
+NSDate *date = [NSDate date];
+NSLog(@"%@", date);
+```
