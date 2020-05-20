@@ -35,7 +35,7 @@ UIAlertAction* defaultAction2 = [UIAlertAction actionWithTitle:@"NO" style:UIAle
 
 ```objective-c
 NSArray* sharedObjects=[NSArray arrayWithObjects:@"sharecontent",  nil];
-    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
-    activityViewController.popoverPresentationController.sourceView = self.view;
-    [self presentViewController:activityViewController animated:YES completion:nil];
+UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
+activityViewController.popoverPresentationController.sourceView = self.view;
+[self presentViewController:activityViewController animated:YES completion:nil];
 ```
