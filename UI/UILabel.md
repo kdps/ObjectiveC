@@ -74,3 +74,13 @@ label.font = [UIFont fontWithName:@"Avenir" size:15];
 ```objective-c
 label.font = [label.font fontWithSize:15];
 ```
+
+## 6. Change contents
+
+```objective-c
+[label setText:@"the new text"];
+```
+
+```objective-c
+[label setText: stringVar];
+```
