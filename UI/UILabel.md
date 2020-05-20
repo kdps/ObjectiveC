@@ -122,3 +122,11 @@ NSAttributedString *attributedString = [[NSAttributedString alloc] initWithStrin
 label.attributedText = attributedString;
 [self.view addSubview:label];
 ```
+
+## 10. Textalign
+
+```
+label.textAlignment = NSTextAlignmentLeft;
+```
+
+`NSTextAlignmentLeft , NSTextAlignmentCenter , NSTextAlignmentRight , NSTextAlignmentJustified , NSTextAlignmentNatural`
