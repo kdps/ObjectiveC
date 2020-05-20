@@ -1,6 +1,6 @@
 # 1. Asyncronized
 
-# 1.1 Concurrent dispatch queue
+## 1.1 Concurrent dispatch queue
 
 ```objective-c
 dispatch_async(dispatch_queue_create("Foo", DISPATCH_QUEUE_CONCURRENT), ^{
@@ -9,7 +9,7 @@ dispatch_async(dispatch_queue_create("Foo", DISPATCH_QUEUE_CONCURRENT), ^{
 
 `OUT-OF-ORDER`
 
-# 1.2 Serial dispatch queue (stack queue)
+## 1.2 Serial dispatch queue (stack queue)
 
 ```objective-c
 dispatch_async(dispatch_queue_create("Foo", NULL), ^{
@@ -19,6 +19,8 @@ dispatch_async(dispatch_queue_create("Foo", NULL), ^{
 `IN-OF-ORDER`
 
 # 2. Syncronized
+
+## Asleep for other thread
 
 ```objective-c
 dispatch_group_t preapreWaitingGroup = dispatch_group_create();
