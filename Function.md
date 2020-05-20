@@ -30,3 +30,12 @@ UIAlertAction* defaultAction2 = [UIAlertAction actionWithTitle:@"NO" style:UIAle
 ```objective-c
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.stackoverflow.com"]];
 ```
+
+## 4. Share contents
+
+```objective-c
+NSArray* sharedObjects=[NSArray arrayWithObjects:@"sharecontent",  nil];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:sharedObjects applicationActivities:nil];
+    activityViewController.popoverPresentationController.sourceView = self.view;
+    [self presentViewController:activityViewController animated:YES completion:nil];
+```
