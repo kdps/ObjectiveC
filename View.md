@@ -1,4 +1,4 @@
-## 1. Get device rect size
+## 1. Get device rect sizes of screen
 
 ```objective-c
 CGFloat width = [UIScreen mainScreen].bounds.size.width;
