@@ -34,3 +34,43 @@ label.numberOfLines = 0;
 ```
 
 `Unlimited`
+
+# 5. Change font attributes
+
+## 5.1 Initialize
+
+```objective c
+UILabel *label = [[UILabel alloc] init];
+or
+UILabel *label = [UILabel new]; // convenience method for calling alloc-init
+```
+
+## 5.2 Change font size
+
+```objective-c
+label.font = [UIFont systemFontOfSize:17];
+```
+
+## 5.3 Change font weight
+
+```objective-c
+label.font = [UIFont systemFontOfSize:17 weight:UIFontWeightBold];
+```
+
+## 5.4 Change dynamic font style
+
+```objective-c
+label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+```
+
+## 5.5 Change font family
+
+```objective-c
+label.font = [UIFont fontWithName:@"Avenir" size:15];
+```
+
+## 5.6 Overwrite font size
+
+```objective-c
+label.font = [label.font fontWithSize:15];
+```
