@@ -24,3 +24,17 @@ self.mnemonicField.delegate=self;
     [self animateTextField: textField up: NO];
 }
 ```
+
+# 3. Only accept specify word
+
+```objective-c
+#define ACCEPTABLE_CHARACTERS @"0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+      NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:ACCEPTABLE_CHARACTERS] invertedSet];
+      NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+
+      return [string isEqualToString:filtered];
+}
+```
