@@ -38,3 +38,20 @@ self.mnemonicField.delegate=self;
       return [string isEqualToString:filtered];
 }
 ```
+
+# 4. When contents changed
+
+```objective-c
+- (void)textViewDidChange:(UITextView *)textView{
+    NSLog(@"textViewDidChange:");
+}
+```
+
+# 5. When changed selection status
+
+```objective-c
+- (void)textViewDidChangeSelection:(UITextView *)textView{
+    NSLog(@"textViewDidChangeSelection:");
+}
+```
+
