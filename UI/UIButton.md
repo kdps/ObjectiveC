@@ -37,3 +37,14 @@ button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
 //Align contents to fill the frame
 button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
 ```
+
+## 6. Add event without storyboard
+
+```objective-c
+-(void) someButtonAction{
+    NSLog(@"Button is tapped");
+
+}
+
+[yourButtonInstance addTarget:self action:@selector(someButtonAction) forControlEvents:UIControlEventTouchUpInside];
+```
