@@ -39,3 +39,14 @@ UIActivityViewController *activityViewController = [[UIActivityViewController al
 activityViewController.popoverPresentationController.sourceView = self.view;
 [self presentViewController:activityViewController animated:YES completion:nil];
 ```
+
+## 5. Open email
+
+```objective-c
+NSURL *url = [NSURL URLWithString:@"mailto://azimov@demo.com"];
+if ([[UIApplication sharedApplication] canOpenURL:url]) {
+    [[UIApplication sharedApplication] openURL:url];
+} else {
+    NSLog(@"Cannot open URL");
+}
+```
