@@ -1,4 +1,4 @@
-## 1. Anonymous Function
+## 1. Recursive Blocks
 
 ```objective-c
 - (void)alert:(NSString *)messsage title:(NSString *)titleMsg okMsg:(NSString *)okMsg cancelMsg:(NSString *)cancelMsg {
@@ -34,4 +34,17 @@
      
     [self presentViewController:alert animated:YES completion:nil];
 }
+```
+
+## 2. Variable Readonly
+
+```objective-c
+void (^test)(void) = ^(void) {
+    NSString * world = [[NSString alloc]init];
+    world = [fString stringByAppendingFormat:@"World"];
+
+    [self alert:@"Alert" title:@"test" okMsg:@"Hello" cancelMsg:world];
+};
+
+test();
 ```
