@@ -1,5 +1,5 @@
 | Method   | Type  | Description |
-| :----- | ----: | :---: |
+| :----- | :---- | :--- |
 |UITextField.text | String | 필드에 표시 할 텍스트를 가져 오거나 설정합니다.|
 |UITextField.attributedText | NSAttributedString | 필드에 표시된 속성있는 텍스트를 가져 오거나 설정합니다.|
 |UITextField.textColor | UIColor | 필드의 텍스트 색상을 가져 오거나 설정합니다.|
