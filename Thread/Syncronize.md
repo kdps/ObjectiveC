@@ -18,6 +18,20 @@ dispatch_async(dispatch_queue_create("Foo", NULL), ^{
 
 `IN-OF-ORDER`
 
+## 1.3 Execute from main thread
+
+```objective-c
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    //Perform expensive tasks
+    //...
+
+    //Now before updating the UI, ensure we are back on the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        label.text = //....
+    });
+}
+```
+
 # 2. Syncronized
 
 ## Asleep for other thread
