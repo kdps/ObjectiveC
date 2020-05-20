@@ -24,3 +24,9 @@ NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                 selector:@selector(iGotCall:)
                                                 userInfo:@"i am iOS guy" repeats:YES];
 ```
+
+## 5. Scheduler
+
+```objective-c
+NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector(self.timerMethod()), userInfo: nil, repeats: false)
+```
