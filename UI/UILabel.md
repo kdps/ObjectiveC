@@ -86,3 +86,11 @@ NSString * stringVar = @"basic String var";
 
 [label setText: stringVar];
 ```
+
+## 7. Highlight
+
+```objective-c
+UILabel *label = [[UILabel alloc] init];
+label.highlighted = YES;
+label.highlightedTextColor = [UIColor redColor];
+```
