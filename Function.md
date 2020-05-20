@@ -18,3 +18,9 @@ UIAlertAction* defaultAction2 = [UIAlertAction actionWithTitle:@"NO" style:UIAle
 [alert addAction:defaultAction2];
 [self presentViewController:alert animated:YES completion:nil];
 ```
+
+## 2. Open settings
+
+```objective-c
+[[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+```
