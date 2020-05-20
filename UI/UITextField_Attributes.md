@@ -1,5 +1,5 @@
 
-UITextField.text : String // 필드에 표시 할 텍스트를 가져 오거나 설정합니다.
+UITextField.text : String <!--// 필드에 표시 할 텍스트를 가져 오거나 설정합니다.-->
 
 UITextField.attributedText : NSAttributedString // 필드에 표시된 속성있는 텍스트를 가져 오거나 설정합니다.
 
