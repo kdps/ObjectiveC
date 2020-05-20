@@ -12,3 +12,10 @@ AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"So
 [utterance setRate:0.2f];
 [synthesizer speakUtterance:utterance];
 ```
+
+## 2. Pause, Stop Interface
+
+```objective-c
+- (BOOL)pauseSpeakingAtBoundary:(AVSpeechBoundary)boundary;
+- (BOOL)stopSpeakingAtBoundary:(AVSpeechBoundary)boundary;
+```
