@@ -31,3 +31,17 @@ NSLog(@"Before 90days : %@", date);
 NSDate *date = [NSDate date];
 NSLog(@"%@", date);
 ```
+
+## 3. Convert NSDate to NSString pointer
+
+```objective-c
+NSDate * clsDate = [NSDate date];
+
+NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+[formatter setDateFormat:@"yyyy-MM-dd"];
+
+//Optionally for time zone conversions
+[formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
+
+NSString *stringFromDate = [formatter stringFromDate:clsDate];
+```
