@@ -23,3 +23,10 @@ if ( [@"Hello" isEqualToString:@"Hello"] ) {
     NSLog(@"Hello");
 }
 ```
+
+## 3. Substring
+
+```objective-c
+NSString * strStartTime = @"20150102030405";
+NSString * strYear = [strStartTime substringWithRange:NSMakeRange(0, 4)];
+```
