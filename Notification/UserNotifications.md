@@ -1,5 +1,7 @@
 ## 1. How to use
 
+!!! It was shown when app is background
+
 1. Add to header
 
 ```objective-c
