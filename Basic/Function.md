@@ -50,3 +50,9 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
     NSLog(@"Cannot open URL");
 }
 ```
+
+## 6. Hide status bar
+
+```objective-c
+[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade]
+```
