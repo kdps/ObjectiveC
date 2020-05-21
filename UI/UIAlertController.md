@@ -85,3 +85,21 @@ UIAlertAction * okAction = [UIAlertAction actionWithTitle:@"Okay" style:UIAlertA
 
 [self presentViewController:alertController animated: YES completion: nil];
 ```
+
+## 2. With destructive
+
+```objective-c
+UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Demo" message:@"A demo with two buttons" preferredStyle:UIAlertControllerStyleActionSheet];
+UIAlertAction * destructiveAction = [UIAlertAction actionWithTitle:@"Delete" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+    //action when pressed button
+}];
+
+UIAlertAction * okAction = [UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        //action when pressed button
+    }];
+
+[alertController addAction:destructiveAction];
+[alertController addAction:okAction];
+
+[self presentViewController:alertController animated: YES completion: nil];
+```
