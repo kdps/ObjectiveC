@@ -13,8 +13,18 @@ NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects
                                                        forKeys:keys];
 ```
 
-### 3. Literal
+## 3. Literal
 
 ```objective-c
 NSDictionary *dict = @{@"key": @"value", @"nextKey": @"nextValue"};
+```
+
+## 4. Check has key
+
+```objective-c
+NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"name1", @"Sam",@"name2", @"Sanju",nil];
+
+if (dict[@"name1"] != nil) {
+} else {  
+}
 ```
