@@ -41,11 +41,11 @@ self.mnemonicField.delegate=self;
 
 # 4. Close keyboard when clicked done button
 
+`@interface YourViewController : ViewController<UITextFieldDelegate>`
+
 ```objective-c
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
  return [textField resignFirstResponder];
 }
 ```
-
-`Add protocol UITextFieldDelegate`
