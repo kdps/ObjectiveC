@@ -47,3 +47,19 @@ UIAlertController * alertController = [UIAlertController alertControllerWithTitl
 }]];
 [self presentViewController:alertController animated:YES completion:nil];
 ```
+
+## 3. With destructive
+
+```objective-c
+UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Destructive" message:@"Simple alertView demo with Destructive and OK." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *destructiveAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+        NSLog(@"Destructive");
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        NSLog(@"OK");
+    }];
+    
+    [alertController addAction:destructiveAction];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated: YES completion: nil];
+```
