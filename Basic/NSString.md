@@ -30,3 +30,9 @@ if ( [@"Hello" isEqualToString:@"Hello"] ) {
 NSString * strStartTime = @"20150102030405";
 NSString * strYear = [strStartTime substringWithRange:NSMakeRange(0, 4)];
 ```
+
+## 4. Use utf-8 string
+
+```objective-c
+[NSString stringWithUTF8String:"utf-8 string"];
+```
