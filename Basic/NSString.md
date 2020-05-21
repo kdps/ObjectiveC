@@ -82,3 +82,17 @@ while (charIndex > 0) {
     [reversedString appendString:[myString substringWithRange:subStrRange]];
 }
 ```
+
+## 11. Decode
+
+```objective-c
+NSString *string = [[NSString alloc] initWithData:utf8Data
+                                         encoding:NSUTF8StringEncoding];
+```
+
+## 12. Encode
+
+```objective-c
+NSString *string = [[NSString alloc] initWithData:utf8Data
+                                         encoding:NSUTF8StringEncoding];
+```
