@@ -70,3 +70,15 @@ if( [strNumber containsString:@"1234"] )
 ```objective-c
 [myString capitalizedString]
 ```
+
+## 10. Reverse
+
+```objective-c
+NSMutableString *reversedString = [NSMutableString string];
+NSInteger charIndex = [myString length];
+while (charIndex > 0) {
+    charIndex--;
+    NSRange subStrRange = NSMakeRange(charIndex, 1);
+    [reversedString appendString:[myString substringWithRange:subStrRange]];
+}
+```
