@@ -41,3 +41,9 @@ NSLog(@"%@", list);
     return nil;
 }
 ```
+
+## 5. Get main bundle path
+
+```objective-c
+NSString * bundlePath = [[NSBundle mainBundle] resourcePath];
+```
