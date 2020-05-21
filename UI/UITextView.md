@@ -29,3 +29,10 @@ textView.textColor = [UIColor redColor];
 ```objective-c
 textView.textAlignment = NSTextAlignmentLeft;
 ```
+
+# 5. Get cursor position
+
+```objective-c
+NSInteger pos = [textView offsetFromPosition:textView.beginningOfDocument
+                                      toPosition:textView.selectedTextRange.start];
+```
