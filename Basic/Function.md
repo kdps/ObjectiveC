@@ -42,10 +42,23 @@ activityViewController.popoverPresentationController.sourceView = self.view;
 
 ## 5. Open email
 
+* Deprecated *
 ```objective-c
 NSURL *url = [NSURL URLWithString:@"mailto://azimov@demo.com"];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
     [[UIApplication sharedApplication] openURL:url];
+} else {
+    NSLog(@"Cannot open URL");
+}
+```
+
+```objective-c
+NSURL *url = [NSURL URLWithString:@"mailto://azimov@demo.com"];
+if ([[UIApplication sharedApplication] canOpenURL:url]) {
+    NSString * url = @"mailto://azimov@demo.com";
+    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL bSuccess) {
+
+    }];
 } else {
     NSLog(@"Cannot open URL");
 }
