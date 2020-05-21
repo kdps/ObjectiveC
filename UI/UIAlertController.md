@@ -66,6 +66,34 @@ UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActi
 [self presentViewController:alertController animated: YES completion: nil];
 ```
 
+## 4. Hint Cancel Button
+
+```objective-c
+@property(nonatomic, strong) UIAlertAction *preferredAction
+```
+
+```objective-c
+UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Cancel edit" message:@"Are you really want to cancel your edit?" preferredStyle:UIAlertControllerStyleAlert];
+
+UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+    NSLog(@"Cancel");
+}];
+
+UIAlertAction *no = [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+    NSLog(@"Highlighted button is pressed.");
+}];
+
+[alertController addAction:cancel];
+[alertController addAction:no];
+
+//add no action to preffered action.
+//Note
+//the action should already be added to alert controller
+alertController.preferredAction = no;
+
+[self presentViewController:alertController animated: YES completion: nil];
+```
+
 # 2. Bottom Alert
 
 ## 1. Alert
