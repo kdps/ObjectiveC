@@ -33,3 +33,9 @@ UITextField *textField = [[UITextField alloc] initWithFrame:frame];
 {
 }
 ```
+
+# 4. Focus
+
+```objective-c
+self.tvTest.becomeFirstResponder;
+```
