@@ -52,3 +52,21 @@ if( [strNumber containsString:@"1234"] )
 {
 }
 ```
+
+## 7. upperString
+
+```objective-c
+[myString uppercaseString]
+```
+
+## 8. lowerString
+
+```objective-c
+[myString lowercaseString]
+```
+
+## 9. upperOnlyFirst
+
+```objective-c
+[myString capitalizedString]
+```
