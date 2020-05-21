@@ -28,3 +28,21 @@ if (dict[@"name1"] != nil) {
 } else {  
 }
 ```
+
+## 5. With plist
+
+```objective-c
+NSString *pathToPlist = [[NSBundle mainBundle] pathForResource:@"plistName" 
+    ofType:@"plist"];
+NSDictionary *plistDict = [[NSDictionary alloc] initWithContentsOfFile:pathToPlist];
+```
+
+## 6. Get object
+
+```objective-c
+Car * lamborghini = [cars objectForKey:@"Lamborghini"];
+```
+
+```objective-c
+Car * lamborghini = cars[@"Lamborghini"];
+```
