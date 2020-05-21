@@ -4,13 +4,13 @@
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 ```
 
-## 3. Open browser
+## 2. Open browser
 
 ```objective-c
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.stackoverflow.com"]];
 ```
 
-## 4. Share contents
+## 3. Share contents
 
 ```objective-c
 NSArray* sharedObjects=[NSArray arrayWithObjects:@"sharecontent",  nil];
@@ -19,7 +19,7 @@ activityViewController.popoverPresentationController.sourceView = self.view;
 [self presentViewController:activityViewController animated:YES completion:nil];
 ```
 
-## 5. Open email
+## 4. Open email
 
 * Deprecated *
 ```objective-c
@@ -43,7 +43,7 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
 }
 ```
 
-## 6. Hide status bar
+## 5. Hide status bar
 
 ```objective-c
 [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade]
