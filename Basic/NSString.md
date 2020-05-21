@@ -36,3 +36,19 @@ NSString * strYear = [strStartTime substringWithRange:NSMakeRange(0, 4)];
 ```objective-c
 [NSString stringWithUTF8String:"utf-8 string"];
 ```
+
+## 5. startWith
+
+```objective-c
+if( [strTest hasPrefix:@"tel:"] )
+{
+} 
+```
+
+## 6. Contains
+
+```objective-c
+if( [strNumber containsString:@"1234"] )
+{
+}
+```
